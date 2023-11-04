@@ -14,6 +14,10 @@ public class Main {
         int[] array2 = {2, 1, 6, 43, 1, 32, 17};
         InsertionSort.sort(array2);
         Main.printArray(array2);
+
+        int[] array3 = {8, 11, 9, 1, 3, 6, 7};
+        BucketSort.sort(array3);
+        Main.printArray(array3);
     }
 
     public static void printArray(int[] array) {
