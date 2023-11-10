@@ -18,6 +18,10 @@ public class Main {
         int[] array3 = {8, 11, 9, 1, 3, 6, 7};
         BucketSort.sort(array3);
         Main.printArray(array3);
+
+        int[] array4 = {18, 43, 1, 65, 3, 8, 22, 71};
+        MergeSort.sort(array4, 0, array4.length - 1);
+        Main.printArray(array4);
     }
 
     public static void printArray(int[] array) {
