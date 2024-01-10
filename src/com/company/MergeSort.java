@@ -1,7 +1,10 @@
 package com.company;
 
-public class MergeSort {
 
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
+
+public class MergeSort {
     private static void merge(int[] array, int beginIndex, int middleIndex, int endIndex) {
         int leftLength = middleIndex - beginIndex + 2;
         int rightLength = endIndex - middleIndex + 1;
