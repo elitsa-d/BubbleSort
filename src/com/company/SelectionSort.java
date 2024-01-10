@@ -1,5 +1,9 @@
 package com.company;
 
+
+// Time complexity: O(n^2);
+// Space complexity: O(1);
+
 public class SelectionSort {
     public static void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
