@@ -3,6 +3,9 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Collections;
 
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
+
 public class BucketSort {
     public static void sort(int[] array) {
          int numberOfBuckets = (int) Math.ceil(Math.sqrt(array.length));
