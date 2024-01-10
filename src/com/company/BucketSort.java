@@ -1,13 +1,9 @@
 package com.company;
 
-import com.sun.jdi.IntegerType;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class BucketSort {
-
     public static void sort(int[] array) {
          int numberOfBuckets = (int) Math.ceil(Math.sqrt(array.length));
          int maxValue = Integer.MIN_VALUE;
