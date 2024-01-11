@@ -1,29 +1,31 @@
 package com.company;
 
+
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
+
 public class QuickSort {
-    public static void sort(int[] array) {
-        int pivot = array.length - 1;
-        int leftPointer = 0;
-        int rightPointer = array.length - 2;
+    private static int partition(int[] array, int start, int end) {
+        int pivot = end;
+        int i = start -1;
 
-        while (array[leftPointer] < array[pivot]) {
-            leftPointer++;
-        }
-
-        while (array[rightPointer] >= array[pivot]) {
-            rightPointer--;
-
-            if (rightPointer == leftPointer) {
-                int temp = array[leftPointer];
-                array[leftPointer] = array[pivot];
-                array[pivot] = temp;
+        for (int j = start; j <= end; j++) {
+            if (array[j] <= array[pivot]) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];;
+                array[j] = temp;
             }
         }
 
-        int temp = array[leftPointer];
-        array[leftPointer] = array[rightPointer];
-        array[rightPointer] = temp;
+        return i;
+    }
 
-
+    public static void sort(int[] array, int beginIndex, int endIndex) {
+        if (beginIndex < endIndex) {
+            int pivot = partition(array, beginIndex, endIndex);
+            sort(array, beginIndex, pivot - 1);
+            sort(array,pivot + 1, endIndex);
+        }
     }
 }

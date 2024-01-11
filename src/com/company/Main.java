@@ -24,7 +24,7 @@ public class Main {
         Main.printArray(array4);
 
         int[] array5 = {18, 43, 1, 65, 3, 8, 22, 71};
-        QuickSort.sort(array5);
+        QuickSort.sort(array5, 0, array.length - 1);
         Main.printArray(array5);
     }
 
