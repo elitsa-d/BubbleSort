@@ -22,6 +22,10 @@ public class Main {
         int[] array4 = {18, 43, 1, 65, 3, 8, 22, 71};
         MergeSort.sort(array4, 0, array4.length - 1);
         Main.printArray(array4);
+
+        int[] array5 = {18, 43, 1, 65, 3, 8, 22, 71};
+        QuickSort.sort(array5);
+        Main.printArray(array5);
     }
 
     public static void printArray(int[] array) {
